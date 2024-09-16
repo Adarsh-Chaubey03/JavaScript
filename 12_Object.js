@@ -44,6 +44,49 @@ JsUser.greeting2 = function(){
 console.log(JsUser.greeting2());
 
 
+// const tinderUser = new  Object()
+const tinderUser ={}
+
+tinderUser.id = "123abc"
+tinderUser.name = "sam"
+tinderUser.isLoggedIn = "false"
+
+console.log(tinderUser)
+
+
+const regualarUser = {
+    email : "adarshchaubey@gmail.com",
+    fullname : {
+        Userfullname : {
+            firstname: "Adarsh",
+            lastname: "Chaubey"
+    }
+    }
+}
+
+console.log(regualarUser.fullname?.Userfullname.firstname)   // Adarsh
+
+// ? - in case it does not exist
+
+const obj1 = {1: "A" , 2:"b"}
+const obj2 = {3: "A" , 4:"b"}
+
+// const obj3 = {obj1,obj2}   Or
+// const obj3 = Object.assign({}, obj1 , obj2) or
+
+const obj3 =  {...obj1, ...obj2}      // {1: 'A', 2: 'b', 3: 'A', 4: 'b'}
+
+console.log(obj3);
+
+
+
+console.log(Object.keys(tinderUser))      // ['id', 'name', 'isLoggedIn']
+console.log(Object.values(tinderUser))    //  ['123abc', 'sam', 'false']
+console.log(Object.entries(tinderUser))   // [Array(2), Array(2), Array(2)]
+
+
+
+
 
 
 
