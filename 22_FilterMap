@@ -1,0 +1,58 @@
+const coding = ["js", "c++", "java"]
+
+const values = coding.forEach((item) => {
+    // console.log(item)
+    return item
+})
+console.log(values)
+
+// for each loop - does not return any value
+
+///-------------------  filter -----------------------------------------
+
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 20]
+
+const newNums = myNums.filter((num) => num > 4)  // explicit return
+console.log(newNums)   //[5, 6, 7, 8, 9, 20]
+
+
+const newNum1 = myNums.filter((num) => {
+    return num > 4  // return is must in scope
+})
+console.log(newNum1)  //[5, 6, 7, 8, 9, 20]
+
+
+
+const newNums2 = []
+
+myNums.forEach((num) => {
+    if (num > 4) {
+        newNums2.push(num)
+    }
+})
+
+console.log(newNums2)  // [5, 6, 7, 8, 9, 20]
+
+
+//-------- map -------------------------------
+
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const newNumbers = myNumbers.map((num) => num += 10)
+console.log(newNumbers);  // [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+
+// chaining
+
+const Numbers = myNumbers
+    .map((num) => num *= 10)
+    .map((num) => num -= 10)
+
+console.log(Numbers)  //  [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+const arr = [1,2,3]
+const total = arr.reduce(function (acc,currVal) {
+    return acc+currVal
+}, 0)
+
+console.log(total);  // 6
