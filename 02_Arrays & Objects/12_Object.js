@@ -8,9 +8,9 @@ const JsUser = {
     name: "adarsh",
     "full name": "Adarsh Chaubey",
     age: 18,
-    [mySym]: "myKey1", // to use as synbol it is necessary to put in []
+    [mySym]: "myKey1", // to use as symbol it is necessary to put in []
     location: "Bhadohi",
-    email: "adarshchaubey@gmail.com",
+    email: "adarshchaubey@gmail.com", 
     loginDays: ["monday","tuesday"]
 }
 console.log(JsUser.email);                //adarshchaubey@gmail.com

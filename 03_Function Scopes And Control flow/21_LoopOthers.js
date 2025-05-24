@@ -50,3 +50,7 @@ coding.forEach(function (lang) {
     console.log(lang)
 })
 
+//callback  function => a funtion without name 
+coding.forEach((lang)=>{
+    console.log(lang)
+})

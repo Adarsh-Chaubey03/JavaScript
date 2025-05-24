@@ -28,20 +28,22 @@ let result2 = addNum(121, 211)
                      result1-> undefined
                      result2-> undefined
 
-3) 12 -> val1
+3)Execution Phase
+
+   12 -> val1
    23 -> val2
     
    addNum -> new variable environment + execution thread
 
-     memory phase 
-        val1  -> undefined
-        val2  -> undefined
-        total -> undefined
+          memory phase 
+             val1  -> undefined
+             val2  -> undefined
+             total -> undefined
 
-     execution phase
-        um1  = 12
-        num2  = 23
-        total = 35
+         execution phase
+             num1  = 12
+             num2  = 23
+             total = 35
 
     delete and return back to 1
     

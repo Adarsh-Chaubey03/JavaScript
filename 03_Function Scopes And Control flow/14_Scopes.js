@@ -18,7 +18,7 @@ if (true) {
     console.log("inner", a11) // inner 100
 }
 // console.log(a1); // a1 is not defined
-// console.log(b1); // 1 is not defined
+// console.log(b1); // b1 is not defined
 console.log(c1); // 30   : no block scope
 console.log(d);  // 43   : no block scope
 
@@ -45,10 +45,10 @@ one()
 if (true) {
     const username = "adarsh"
     if (username === "adarsh") {
-        website = " alpha.com"
+        const website = " alpha.com"
         console.log(username + website)  // adarsh alpha.com
     }
-    console.log(website);     //  alpha.com
+   // console.log(website);     //  not defined
 }
 // console.log(username)  => username is not defined
 
