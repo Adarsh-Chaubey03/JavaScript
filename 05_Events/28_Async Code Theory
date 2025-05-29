@@ -1,0 +1,22 @@
+/// javascript
+
+      -synchronous
+      -single thread
+
+
+   Execution context ===>
+
+      - execute one line of code at a time
+      - console log-> 1
+      - console log-> 2
+      - Call Stack                     Meamory Heap
+      - each operation waits for last operation to be completed
+
+
+    BLOCKING  CODE                               AND                        NON-BLOCKING CODE
+* blocks the flow of program                                            * does not block Execution
+* read file sync                                                        * read file async
+
+
+
+
