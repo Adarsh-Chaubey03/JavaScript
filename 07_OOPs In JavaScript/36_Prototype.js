@@ -3,7 +3,7 @@ let myName = "adarsh     "
 console.log(myName.trim().length) // 6
 
 String.prototype.truelength = function(){
-    console.log(`${this.name}`)
+    // console.log(`${this.name}`)
     console.log(`true length is : ${this.trim().length}`);
     
 }
@@ -12,13 +12,7 @@ myName.truelength()
 
 
 
-
-
-
-
-
-
-let myHera = ["thor", "spiderman"]
+let myHero = ["thor", "spiderman"]
 
 let heroPower = {
     thor: "hammer",
