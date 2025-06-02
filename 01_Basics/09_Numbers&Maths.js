@@ -1,3 +1,4 @@
+Set-ExecutionPolicy RemoteSigned
 const score = 400
 console.log(score)  //400
 
