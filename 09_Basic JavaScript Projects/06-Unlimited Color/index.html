@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Background Color Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            transition: background-color 0.8s ease;
+        }
+    </style>
+</head>
+<body class="h-screen w-screen flex items-center justify-center bg-gray-100 font-sans">
+
+    <div class="text-center p-8 bg-white rounded-2xl shadow-2xl w-80 space-y-6">
+        <h1 class="text-2xl font-bold text-gray-800">🎨 Random Color Changer</h1>
+        <p class="text-sm text-gray-600">Click <strong>Start</strong> to change background every second</p>
+
+        <div class="flex justify-center gap-4">
+            <button id="start"
+                class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition duration-300">
+                Start
+            </button>
+            <button id="stop"
+                class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition duration-300">
+                Stop
+            </button>
+        </div>
+
+        <p class="text-xs text-gray-400 italic">Made with 💚 using JavaScript + Tailwind CSS</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

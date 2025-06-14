@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Theme Switcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="body" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-300 via-blue-200 to-lime-200 transition-colors duration-500">
+
+  <div class="bg-white/30 backdrop-blur-md p-10 rounded-3xl shadow-xl text-center border border-white/50 space-y-6">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">🎨 Select To Switch</h2>
+
+    <div class="flex justify-center gap-5">
+      <span id="grey" class="button w-12 h-12 rounded-full bg-gray-600 cursor-pointer border-4 border-white hover:scale-110 transition-transform"></span>
+      <span id="green" class="button w-12 h-12 rounded-full bg-green-500 cursor-pointer border-4 border-white hover:scale-110 transition-transform"></span>
+      <span id="yellow" class="button w-12 h-12 rounded-full bg-yellow-400 cursor-pointer border-4 border-white hover:scale-110 transition-transform"></span>
+      <span id="red" class="button w-12 h-12 rounded-full bg-red-500 cursor-pointer border-4 border-white hover:scale-110 transition-transform"></span>
+    </div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
